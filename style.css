@@ -132,25 +132,6 @@ footer{
   background-color: #1f4054;
 }
 
-.faq ul {
-  display: flex;              /* activa flexbox */
-  justify-content: space-between; /* distribuye las imágenes con separación */
-  gap: 20px;                  /* espacio entre cada imagen */
-  list-style: none;           /* quita viñetas del ul */
-  padding: 0;                 /* elimina padding por defecto */
-  margin: 0;                  /* elimina margen por defecto */
-}
-
-.faq ul li {
-  flex: 1;                    /* cada imagen ocupa el mismo ancho */
-}
-
-.faq ul li img {
-  width: 100%;                /* imagen ocupa todo el ancho del li */
-  height: auto;               /* mantiene proporción */
-  display: block;             /* evita espacios extra debajo de la imagen */
-}
-
 
 /* Tipografía para el footer */
 
