@@ -113,6 +113,13 @@ footer {
 
 /* Celulares */
 
+@media (min-width: 460px) {
+  /* Phone */
+  p {
+    column-count: 1;
+  }
+}
+
 @media (min-width: 700px) {
   /* Tablets */
   p {
