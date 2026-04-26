@@ -70,6 +70,8 @@ p {
     gap: 20px;
     font-family: "Montserrat Alternates";
     font-weight: 500;
+    background-color: #1f4054;
+    border-radius: 2px;
 }
 
 .nav-header ul{
