@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/Estilos generales/
+/*Estilos generales*/
+
 body {
     background-color: #dfe6f0;
     font-family: "Montserrat Alternates";
@@ -53,39 +54,66 @@ p {
     column-gap: 20px;
 }
 
-/Estilos del navegador principal/
+/*Estilos del navegador principal*/
 
+/* Estilos generales del menú */
 .nav-header {
-  display: flex;              /* logo y menús en fila */
-  align-items: center;        /* centra verticalmente */
-  gap: 20px;                  /* espacio entre logo y menú */
+  display: flex;
+  flex-direction: column; /* Menú principal en columna */
+  align-items: flex-start;
+  background-color: #f5f5f5;
+  padding: 10px;
+  width: 250px; /* ancho fijo para columna */
 }
 
-.nav-header ul {
-  display: flex;              /* ítems en fila horizontal */
-  flex-direction: row;        /* asegura disposición horizontal */
-  gap: 15px;                  /* separación entre ítems */
-  margin: 0;
+/* Cada lista principal */
+.nav-header > ul {
+  display: flex;
+  flex-direction: column; /* opciones en columna */
+  width: 100%;
+  margin: 5px 0;
   padding: 0;
   list-style: none;
 }
 
+/* Cada opción ocupa el mismo espacio */
 .nav-header li {
-  list-style: none;
+  flex: 1;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 2px 0;
 }
 
+/* Enlaces */
 .nav-header a {
+  display: block;
+  padding: 10px;
   text-decoration: none;
-  color: #0a0a0a;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  color: #333;
+  font-weight: bold;
 }
 
+/* Hover */
 .nav-header a:hover {
-  background-color: #ff6d00;
-  color: #ffffff;
+  background-color: #ddd;
 }
+
+/* Submenús */
+.nav-header ul ul {
+  display: flex;
+  flex-direction: column; /* submenús también en columna */
+  margin-left: 15px; /* indentación visual */
+  border-left: 2px solid #aaa;
+  padding-left: 10px;
+}
+
+/* Submenú items con mismo espacio */
+.nav-header ul ul li {
+  flex: 1;
+  border: none;
+  text-align: left;
+}
+
 
 
 main {
@@ -95,7 +123,7 @@ flex-direction: column;
 flex-wrap: wrap;
 }
 
-/Tipografia preguntas frecuentes/
+/*Tipografia preguntas frecuentes*/
 
 .faq summary {
      font-weight: 400;
