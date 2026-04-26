@@ -55,51 +55,29 @@ p {
 
 /* /Estilos del navegador principal/ */
 
-/* Menú principal en fila */
-/* Menú principal en fila */
 .nav-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px; /* separación entre menús */
+  display: flex;       /* menú principal en fila */
+  gap: 20px;           /* espacio entre menús */
 }
 
 .nav-header ul {
-  list-style: none;
+  list-style: none;    /* sin viñetas */
   margin: 0;
   padding: 0;
-  position: relative;
 }
 
-.nav-header ul > li {
-  display: inline-block;
-  position: relative;
+.nav-header li {
+  margin: 5px 0;       /* espacio entre ítems */
 }
 
-.nav-header ul > li > a {
-  text-decoration: none;
-  padding: 10px 15px;
-  display: block;
-  color: inherit;   /* usa el color por defecto del navegador */
-  background: none; /* sin fondo */
+.nav-header a {
+  text-decoration: none; /* sin subrayado */
+  color: inherit;        /* color por defecto del navegador */
 }
 
-/* Submenús siempre visibles en columna */
+/* Submenús en columna */
 .nav-header ul ul {
-  display: block;   /* siempre visible */
-  position: static; /* integrado al flujo normal */
-  margin-top: 5px;
-  padding-left: 20px; /* indentación para diferenciar */
-}
-
-.nav-header ul ul li {
-  display: block; /* cada opción en columna */
-}
-
-.nav-header ul ul li a {
-  padding: 5px 10px;
-  display: block;
-  color: inherit;   /* sin color forzado */
-  background: none; /* sin fondo */
+  margin-left: 20px;   /* indentación para diferenciar */
 }
 
 
