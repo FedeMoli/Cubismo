@@ -67,6 +67,10 @@ p {
 .nav-header {
   display: flex;
   gap: 20px;
+  font-family: "Montserrat Alternates";
+  text-decoration: none;
+  font-weight: 500;
+  color: #0a0a0a;
 }
 
 /* ===========================
@@ -93,10 +97,6 @@ p {
 =========================== */
 
 /* Celulares */
-body {
-  background-color: hsl(135, 80%, 50%);
-  border: 20px solid hsl(135, 100%, 15%);
-}
 
 @media (min-width: 700px) {
   /* Tablets */
