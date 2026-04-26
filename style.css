@@ -61,36 +61,19 @@ body {
 }
 
 .nav-header ul {
-  display: grid;                        /* activa grid */
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
-  gap: 15px;                            /* separación entre columnas */
-  font-weight: 500; 
+  font-weight:500; 
   text-decoration: none;
-  padding: 0;
-  margin: 20px 0;                       /* espacio arriba y abajo */
 }
 
 .nav-header li {
-  text-align: center;                   /* centra cada ítem */
-  list-style: none;
+  text-decoration: none;
+  color: #0a0a0a;
 }
 
 .nav-header a {
   text-decoration: none;
   color: #0a0a0a;
-  display: block;                       /* ocupa toda la celda */
-  padding: 10px 15px;                   /* espacio interno */
-  border-radius: 8px;                   /* bordes redondeados */
-  background-color: #f9f9f9;            /* fondo claro */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);/* sombra ligera */
-  transition: all 0.3s ease;
 }
-
-.nav-header a:hover {
-  background-color: #ff6d00;            /* color corporativo al pasar */
-  color: #ffffff;                       /* texto blanco en hover */
-}
-
 
 /* Tipografía para las preguntas frecuentes */
 .faq summary {
