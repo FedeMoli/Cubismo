@@ -64,25 +64,13 @@ p {
 /* ===========================
    4. Navegación principal
 =========================== */
-.nav-header {
-  display: flex;
-  align-items: center;       /* centra verticalmente logo y menú */
-  background-color: #1f4054; /* color uniforme */
-  padding: 10px 20px;        /* espacio interno */
-}
-
-.nav-header a {
-  display: flex;
-  align-items: center;
-  background: none;          /* sin fondo extra */
-}
-
-.nav-header img {
-  display: block;
-  background: none;          /* elimina fondo */
-  border: none;              /* elimina borde */
-  border-radius: 0;          /* sin esquinas redondeadas */
-  height: 60px;              /* tamaño fijo del logo */
+.nav-header{
+    display:flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    background-color: #1f4054;
 }
 
 .nav-header ul{
