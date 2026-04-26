@@ -100,9 +100,6 @@ p {
 
 @media (min-width: 700px) {
   /* Tablets */
-  body {
-    background-color: rgb(155, 23, 153);
-  }
   p {
     column-count: 2;
   }
@@ -110,9 +107,6 @@ p {
 
 @media (min-width: 1200px) {
   /* Desktop */
-  body {
-    background-color: rgb(206, 199, 3);
-  }
   p {
     column-count: 3;
   }
