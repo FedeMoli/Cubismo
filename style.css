@@ -1,158 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*Estilos generales*/
 body {
-  background-color: #dfe6f0;
-  font-family: "Montserrat Alternates";
+    background-color: #dfe6f0;
+    font-family: "Montserrat Alternates";
 }
 
-/*Style de Ul*/
 ul {
-  list-style: none;   /* elimina los puntitos */
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
 }
 
-/*Styles Imagenes*/
 img {
-  border-radius: 15px;   /* redondea los bordes */
+border-radius: 15px;
 }
 
 h1 {
-  color:#ffffff;
-  background-color:#ff6d00;
-  text-decoration: underline;
-  font-weight: 900; /* BLACK */
+    color: #ff6d00;
+    text-decoration: underline;
+    font-weight: 900;
 }
 
-h2 {
-  color: #1ec853;
-  background-color: #a41d1d;
-  text-decoration: underline;
-  font-weight:700; /* SEMIBOLD */
+h2{
+    color: #0a0a0a;
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 h3 {
-  color:#ffffff;
-  background-color:#ff6d00;
-  text-decoration: underline;
-  font-weight:600; /* LIGHT */
+    color: #ff6d00;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
-h4 {
-  color:#ff6d00;
-  text-decoration: underline;
-  font-weight:500; /* MEDIUM */
+h4{
+    color: red;
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 h5 {
-  color:#ffffff;
-  font-weight:600 ; /* THIN */
+    color: green;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 p {
-  color: #0a0a0a;
-  font-weight:400; /* THIN */
-  column-count: 1;   /* base: una columna */
-  column-gap: 20px;
+    color: #0a0a0a;
+    font-weight: 400;
+    column-count: 1;
+    column-gap: 20px;
 }
 
-body {
-  background-color: #dfe6f0;
+/*Estilos del navegador principal*/
+
+.nav-header ul{
+    font-weight: 500;
+    text-decoration: none;
 }
 
-/* ====== MENÚ PRINCIPAL ====== */
-.nav-header {
-  background-color: #1f4054;   /* color corporativo */
-  padding: 10px 20px;
+.nav-header ul li{
+    text-decoration: none;
+    color: #0a0a0a;
 }
 
-.nav-header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;               /* menú horizontal */
-  gap: 20px;
+.nav-header a{
+    text-decoration: none;
+    color: #0a0a0a;
 }
-
-.nav-header li {
-  position: relative;          /* necesario para submenús */
-}
-
-.nav-header a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
-  padding: 8px 12px;
-  display: block;
-  transition: background-color 0.3s ease;
-}
-
-.nav-header a:hover {
-  background-color: #ff6d00;   /* hover naranja */
-  border-radius: 5px;
-}
-
-/* ====== SUBMENÚS ====== */
-.nav-header li ul {
-  display: none;               /* oculto por defecto */
-  position: absolute;
-  top: 100%;                   /* debajo del padre */
-  left: 0;
-  background-color: #1f4054;
-  padding: 10px 0;
-  min-width: 200px;
-  flex-direction: column;
-  z-index: 1000;
-}
-
-.nav-header li:hover ul {
-  display: flex;               /* aparece al pasar el mouse */
-}
-
-.nav-header li ul li {
-  width: 100%;
-}
-
-.nav-header li ul a {
-  padding: 8px 12px;
-  color: #ffffff;
-}
-
-
-/* Tipografía para las preguntas frecuentes */
-.faq summary {
-  font-weight:500;
-}
-
-.faq p {
-  font-weight: 400;
-}
-
-footer{
-  background-color: #1f4054;
-}
-
-
-/* Tipografía para el footer */
-
-
-/* 4. Dar borde al logo */
-header nav a img {
-  border: 2px solid black;   /* borde negro alrededor del logo */
-  padding: 5px;              /* espacio interno */
-}
-
 
 main {
   min-height: 100vh;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   flex-wrap: wrap;
-  
 }
 
-@media (min-width: 700px) {
-  p {
-    column-count: 2; /* dos columnas */
-  }
+/**Tipografia preguntas frecuentes**/
+
+.faq summary {
+     font-weight: 400;
+}
+
+
+.faq p {
+    font-weight: 400;
+}
+
+footer {
+    background-color: #1f4054;
+    font-weight: 400;
 }
