@@ -60,9 +60,9 @@ body {
   background-color: #dfe6f0;
 }
 
-/* ====== MENÚ PRINCIPAL ====== */
+/* Menú principal */
 .nav-header {
-  background-color: #1f4054;   /* color corporativo */
+  background-color: #1f4054;
   padding: 10px 20px;
 }
 
@@ -70,12 +70,12 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;               /* menú horizontal */
+  display: flex;
   gap: 20px;
 }
 
 .nav-header li {
-  position: relative;          /* necesario para submenús */
+  position: relative;
 }
 
 .nav-header a {
@@ -88,25 +88,26 @@ body {
 }
 
 .nav-header a:hover {
-  background-color: #ff6d00;   /* hover naranja */
+  background-color: #ff6d00;
   border-radius: 5px;
 }
 
-/* ====== SUBMENÚS ====== */
+/* Submenús */
 .nav-header li ul {
-  display: none;               /* oculto por defecto */
+  display: none;
   position: absolute;
-  top: 100%;                   /* debajo del padre */
+  top: 100%;   /* debajo del padre */
   left: 0;
   background-color: #1f4054;
   padding: 10px 0;
-  min-width: 200px;
+  min-width: 220px;
   flex-direction: column;
-  z-index: 1000;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-.nav-header li:hover ul {
-  display: flex;               /* aparece al pasar el mouse */
+.nav-header li:hover > ul {
+  display: flex;   /* aparece al pasar el mouse */
 }
 
 .nav-header li ul li {
@@ -116,6 +117,11 @@ body {
 .nav-header li ul a {
   padding: 8px 12px;
   color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.nav-header li ul a:hover {
+  background-color: #ff6d00;
 }
 
 
