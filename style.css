@@ -60,9 +60,9 @@ body {
   background-color: #dfe6f0;
 }
 
-/* Menú principal */
+/* ====== MENÚ PRINCIPAL ====== */
 .nav-header {
-  background-color: #1f4054;
+  background-color: #1f4054;   /* color corporativo */
   padding: 10px 20px;
 }
 
@@ -70,12 +70,12 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: flex;               /* menú horizontal */
   gap: 20px;
 }
 
 .nav-header li {
-  position: relative;
+  position: relative;          /* necesario para submenús */
 }
 
 .nav-header a {
@@ -88,26 +88,25 @@ body {
 }
 
 .nav-header a:hover {
-  background-color: #ff6d00;
+  background-color: #ff6d00;   /* hover naranja */
   border-radius: 5px;
 }
 
-/* Submenús */
+/* ====== SUBMENÚS ====== */
 .nav-header li ul {
-  display: none;
+  display: none;               /* oculto por defecto */
   position: absolute;
-  top: 100%;   /* debajo del padre */
+  top: 100%;                   /* debajo del padre */
   left: 0;
   background-color: #1f4054;
   padding: 10px 0;
-  min-width: 220px;
+  min-width: 200px;
   flex-direction: column;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
 }
 
-.nav-header li:hover > ul {
-  display: flex;   /* aparece al pasar el mouse */
+.nav-header li:hover ul {
+  display: flex;               /* aparece al pasar el mouse */
 }
 
 .nav-header li ul li {
@@ -117,13 +116,7 @@ body {
 .nav-header li ul a {
   padding: 8px 12px;
   color: #ffffff;
-  transition: background-color 0.3s ease;
 }
-
-.nav-header li ul a:hover {
-  background-color: #ff6d00;
-}
-
 
 
 /* Tipografía para las preguntas frecuentes */
