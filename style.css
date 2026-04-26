@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*Estilos generales*/
+/Estilos generales/
 body {
     background-color: #dfe6f0;
     font-family: "Montserrat Alternates";
@@ -53,7 +53,7 @@ p {
     column-gap: 20px;
 }
 
-/*Estilos del navegador principal*/
+/Estilos del navegador principal/
 
 .nav-header {
   display: flex;              /* logo y menús en fila */
@@ -74,19 +74,28 @@ p {
   list-style: none;
 }
 
-.nav-header a{
-    text-decoration: none;
-    color: #0a0a0a;
+.nav-header a {
+  text-decoration: none;
+  color: #0a0a0a;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
+
+.nav-header a:hover {
+  background-color: #ff6d00;
+  color: #ffffff;
+}
+
 
 main {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+flex-direction: column;
+flex-wrap: wrap;
 }
 
-/**Tipografia preguntas frecuentes**/
+/Tipografia preguntas frecuentes/
 
 .faq summary {
      font-weight: 400;
