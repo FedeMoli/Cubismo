@@ -69,31 +69,6 @@ p {
   gap: 20px;
 }
 
-.nav-header ul {
-  font-weight: 500;
-}
-
-.nav-header li {
-  margin: 5px 0;
-  color: #0a0a0a;
-}
-
-.nav-header a {
-  text-decoration: none;
-  color: #0a0a0a;
-}
-
-/* Submenús */
-.nav-header ul ul {
-  margin-left: 20px;
-}
-
-/* Logo */
-header nav a img {
-  border: 2px solid black;
-  padding: 5px;
-}
-
 /* ===========================
    5. Preguntas frecuentes
 =========================== */
