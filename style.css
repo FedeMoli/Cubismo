@@ -55,54 +55,20 @@ p {
 
 /* /Estilos del navegador principal/ */
 
-.nav-header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex; /* menú principal en fila */
-  background: #333;
+.nav-header ul{
+    font-weight: 500;
+    text-decoration: none;
 }
 
-.nav-header ul li {
-  position: relative;
+.nav-header ul li{
+    text-decoration: none;
+    color: #0a0a0a;
 }
 
-.nav-header ul li a {
-  display: block;
-  padding: 10px 15px;
-  color: #fff;
-  text-decoration: none;
+.nav-header a{
+    text-decoration: none;
+    color: #0a0a0a;
 }
-
-.nav-header ul li a:hover {
-  background: #444;
-}
-
-/* Submenús ocultos */
-.nav-header ul li ul {
-  display: none;
-  position: absolute;
-  top: 100%; /* debajo del padre */
-  left: 0;
-  background: #444;
-  flex-direction: column;
-  min-width: 200px;
-}
-
-/* Mostrar submenú al pasar el mouse */
-.nav-header ul li:hover ul {
-  display: flex;
-}
-
-.nav-header ul li ul li a {
-  padding: 10px;
-  color: #fff;
-}
-
-.nav-header ul li ul li a:hover {
-  background: #555;
-}
-
 
 main {
   min-height: 100vh;
