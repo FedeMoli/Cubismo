@@ -55,29 +55,23 @@ p {
 
 /*Estilos del navegador principal*/
 
-.nav-header 
-{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
 .nav-header {
-  display: flex;
-  flex-direction: column;   /* logo y menú en columna */
-  align-items: flex-start;  /* alineado a la izquierda */
+  display: flex;              /* logo y menús en fila */
+  align-items: center;        /* centra verticalmente */
+  gap: 20px;                  /* espacio entre logo y menú */
 }
 
 .nav-header ul {
-  display: flex;
-  flex-direction: column;   /* ítems uno debajo del otro */
+  display: flex;              /* ítems en fila horizontal */
+  flex-direction: row;        /* asegura disposición horizontal */
+  gap: 15px;                  /* separación entre ítems */
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .nav-header li {
-  margin: 5px 0;            /* espacio entre ítems */
+  list-style: none;
 }
 
 .nav-header a{
