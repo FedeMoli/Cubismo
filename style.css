@@ -62,20 +62,22 @@ p {
   gap: 20px;
 }
 
-.nav-header ul{
-    font-weight: 500;
-    text-decoration: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    
+.nav-header {
+  display: flex;
+  flex-direction: column;   /* logo y menú en columna */
+  align-items: flex-start;  /* alineado a la izquierda */
 }
 
-.nav-header ul li{
-    text-decoration: none;
-    color: #0a0a0a;
+.nav-header ul {
+  display: flex;
+  flex-direction: column;   /* ítems uno debajo del otro */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-header li {
+  margin: 5px 0;            /* espacio entre ítems */
 }
 
 .nav-header a{
