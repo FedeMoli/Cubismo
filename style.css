@@ -1,21 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ===========================
+   1. Importación de fuentes
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* /Estilos generales/ */
+/* ===========================
+   2. Estilos generales
+=========================== */
 body {
-    background-color: #dfe6f0;
-    font-family: "Montserrat Alternates";
+  background-color: #dfe6f0;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 ul {
-    list-style: none;
-    padding: 0%;
-    margin: 0%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-border-radius: 15px;
+  border-radius: 15px;
 }
 
+/* ===========================
+   3. Tipografía y títulos
+=========================== */
 h1 {
     color: #ff6d00;
     text-decoration: underline;
@@ -47,60 +55,90 @@ h5 {
 }
 
 p {
-    color: #0a0a0a;
-    font-weight: 400;
-    column-count: 2;
-    column-gap: 20px;
+  color: #0a0a0a;
+  font-weight: 400;
+  column-count: 1;
+  column-gap: 20px;
 }
 
-/* /Estilos del navegador principal/ */
-
+/* ===========================
+   4. Navegación principal
+=========================== */
 .nav-header {
-  display: flex;       /* menú principal en fila */
-  gap: 20px;           /* espacio entre menús */
+  display: flex;
+  gap: 20px;
 }
 
 .nav-header ul {
-  list-style: none;    /* sin viñetas */
-  margin: 0;
-  padding: 0;
+  font-weight: 500;
 }
 
 .nav-header li {
-  margin: 5px 0;       /* espacio entre ítems */
+  margin: 5px 0;
+  color: #0a0a0a;
 }
 
 .nav-header a {
-  text-decoration: none; /* sin subrayado */
-  color: inherit;        /* color por defecto del navegador */
+  text-decoration: none;
+  color: #0a0a0a;
 }
 
-/* Submenús en columna */
+/* Submenús */
 .nav-header ul ul {
-  margin-left: 20px;   /* indentación para diferenciar */
+  margin-left: 20px;
 }
 
-
-
-main {
-  min-height: 100vh;
-  display: flex;
-flex-direction: column;
-flex-wrap: wrap;
+/* Logo */
+header nav a img {
+  border: 2px solid black;
+  padding: 5px;
 }
 
-/* /Tipografia preguntas frecuentes/ */
-
+/* ===========================
+   5. Preguntas frecuentes
+=========================== */
 .faq summary {
-     font-weight: 400;
+  font-weight: 500;
 }
-
 
 .faq p {
-    font-weight: 400;
+  font-weight: 400;
 }
 
-footer {
-    background-color: #1f4054;
-    font-weight: 400;
+/* ===========================
+   6. Footer
+=========================== */
+.nav-footer ul {
+  background-color: #1f4054;
+  font-weight: 500;
+}
+
+/* ===========================
+   7. Media Queries
+=========================== */
+
+/* Celulares */
+body {
+  background-color: hsl(135, 80%, 50%);
+  border: 20px solid hsl(135, 100%, 15%);
+}
+
+@media (min-width: 700px) {
+  /* Tablets */
+  body {
+    background-color: rgb(155, 23, 153);
+  }
+  p {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Desktop */
+  body {
+    background-color: rgb(206, 199, 3);
+  }
+  p {
+    column-count: 3;
+  }
 }
