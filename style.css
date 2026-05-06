@@ -103,9 +103,52 @@ p {
 /* ===========================
    6. Footer
 =========================== */
-footer {
+.footer-principal {
   background-color: #1f4054;
-  font-weight: 500;
+  color: #dfe6f0;
+  padding: 30px;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* se adapta en pantallas chicas */
+  gap: 30px;
+}
+
+.footer-contenido div {
+  flex: 1 1 250px; /* cada bloque ocupa mínimo 250px */
+  max-width: 300px;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 180px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #ff6d00;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #e65c00;
+}
+
+.mapa iframe {
+  border-radius: 10px;
+  width: 100%;
 }
 
 /* ===========================
